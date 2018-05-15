@@ -1,25 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import "./log_in.css";
+import "./listing.css";
 
-class LogIn extends React.Component {
+class Listing extends React.Component {
+
     render() {
         return (
-            <div>
-                <span>Log In</span><br />
-                Email: <input type="text" /><br />
-                Password: <input type="text" /><br />
-                <input type="submit" value="Submit" />
+            <div className="listing">
+                <img src={this.props.imageURL} />
                 <br/>
-                <br/>
-                <input type="submit" value="Sign Up" />
+                <span>{this.props.description}</span>
             </div>
         );
     }
 }
 
-LogIn.propTypes = {
+Listing.propTypes = {
 };
 
 function mapStateToProps(state) {
@@ -35,4 +32,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(LogIn);
+)(Listing);

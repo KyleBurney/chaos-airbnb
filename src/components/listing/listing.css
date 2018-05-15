@@ -1,0 +1,8 @@
+.listing{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.listing img{
+    height: 100px;
+}
