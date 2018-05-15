@@ -1,0 +1,30 @@
+.grid-container{
+    display: grid;
+    align-items: center;
+    grid-template-areas: 'header'
+    'main'
+    'footer';
+}
+
+.grid-container > div {
+    text-align: center;
+    margin: auto;
+}
+
+.grid-item{
+    display: flex;
+    align-items: center;
+}
+
+.mainPanel{ 
+    grid-area: main;
+    height:calc(100vh - 60px);
+}
+
+.header{ 
+    grid-area: header; 
+}
+
+.footer{ 
+    grid-area: footer; 
+}
